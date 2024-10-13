@@ -6,25 +6,6 @@ This project demonstrates interfacing a USB keyboard with an FPGA and transmitti
 
 The project is structured into different modules for handling USB and I2C communication, along with individual test benches for verifying the functionality of each module.
 
-## Directory Structure
-
-The project is organized as follows:
-
-project_directory/
-│
-├── src/                        # Source code for Verilog modules
-│   ├── USB_Interface.v          # USB Interface module (USB to keypress decoder)
-│   ├── I2C_Master.v             # I2C Master module (handles I2C communication)
-│   └── Keyboard_Interface.v     # Top-level module integrating USB and I2C modules
-│
-├── testbench/                   # Testbench files for module verification
-│   ├── tb_USB_Interface.v       # Testbench for USB_Interface module
-│   ├── tb_I2C_Master.v          # Testbench for I2C_Master module
-│   └── tb_Keyboard_Interface.v  # Testbench for top-level Keyboard_Interface module
-│
-└── sim/                         # Simulation output directory
-    └── waveforms/               # Directory to store waveform files from simulations
-
 ## Modules
 
 1. **USB_Interface.v**: 
